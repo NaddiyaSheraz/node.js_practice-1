@@ -115,3 +115,11 @@ app.get('/shop/:type/items/:itmeId',(req,res)=>{
 app.get('/admin/panel/overview', (req,res)=>{
     res.send(  `<h2>Admin Panel Overviewn<h2/>`)
 })
+
+
+// >>>>>>>>>>>> Query<<<<<<<<<<<<<<<<
+
+//http://localhost:5000/search?name=Naddiya&gender=female
+app.get('/search',(req,res)=>{
+    res.send(req.query)
+})
